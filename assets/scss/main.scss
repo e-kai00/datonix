@@ -524,4 +524,75 @@ footer {
     }
 }
 
+@media (max-width: 590px) {
 
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .header__container {
+        gap: 0;
+
+        .signup-btn {
+            padding: .8em;
+        }
+    }
+
+    .services__container {
+
+        .services__item-cards {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4 {
+                grid-column: 1 / -1;
+                grid-row: auto;
+            }
+
+            
+        }
+    }
+
+    .numbers__container {
+
+        .numbers__content {
+
+            .numbers__item-title {
+                font-size: 2em;
+            }
+        }
+    }
+
+    footer {
+
+        .footer__body {
+            grid-template-rows: auto;
+            grid-template-columns: none;
+            grid-row-gap: 2em;
+
+            .footer__menu {
+                display: none;
+            }
+
+            .footer__socials {
+
+                .footer__title {
+                    text-align: center;
+                }
+
+                .footer__socials-item {
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+
+}

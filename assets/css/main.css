@@ -438,3 +438,51 @@ footer .footer__body .footer__socials-item i {
     grid-row-gap: 3em;
   }
 }
+@media (max-width: 590px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .header__container {
+    gap: 0;
+  }
+  .header__container .signup-btn {
+    padding: 0.8em;
+  }
+
+  .services__container .services__item-cards {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .services__container .services__item-cards .card-1,
+.services__container .services__item-cards .card-2,
+.services__container .services__item-cards .card-3,
+.services__container .services__item-cards .card-4 {
+    grid-column: 1/-1;
+    grid-row: auto;
+  }
+
+  .numbers__container .numbers__content .numbers__item-title {
+    font-size: 2em;
+  }
+
+  footer .footer__body {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    grid-row-gap: 2em;
+  }
+  footer .footer__body .footer__menu {
+    display: none;
+  }
+  footer .footer__body .footer__socials .footer__title {
+    text-align: center;
+  }
+  footer .footer__body .footer__socials .footer__socials-item {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
