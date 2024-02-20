@@ -1,0 +1,29 @@
+
+@mixin btn-style {
+    display: inline-block;
+    background-color: $coral;
+    color: $black;
+    padding: 1em;
+    font-size: .9rem;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}
+
+// targets <i>
+@mixin socials-round($bg-color, $txt-color) {    
+    width: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 7px;
+    text-align: center;
+    color: $txt-color;
+    background-color: $bg-color;
+    margin-left: .2em;
+    margin-right: .2em;
+   
+}
