@@ -48,6 +48,7 @@ h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.9rem;
+    padding-bottom: .8em;
 }
 
 ul {
@@ -404,12 +405,17 @@ footer {
         }
 
         .footer__menu-list {
-            margin-bottom: 3em;
+            margin-bottom: 2em;
 
             li {
                 margin-bottom: .3em;
             }
-        }       
+        } 
+        
+        .footer__button {
+            padding: .8em;
+            font-size: .8em;
+        }
         
         .footer__socials-item {
             display: inline-block;

@@ -42,6 +42,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.9rem;
+  padding-bottom: 0.8em;
 }
 
 ul {
@@ -347,10 +348,14 @@ footer .footer__body .footer__subscribe .refferal_badge {
   background-color: #8a8a8a;
 }
 footer .footer__body .footer__menu-list {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 footer .footer__body .footer__menu-list li {
   margin-bottom: 0.3em;
+}
+footer .footer__body .footer__button {
+  padding: 0.8em;
+  font-size: 0.8em;
 }
 footer .footer__body .footer__socials-item {
   display: inline-block;
