@@ -13,6 +13,7 @@ html, body {
 body {
   min-height: 100vh;
   position: relative;
+  background-color: black;
   background: url(../images/bg-night.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -111,6 +112,13 @@ a {
 }
 .header__container .menu-mobile i {
   font-size: 2.3rem;
+  color: white;
+}
+.header__container .menu-mobile-close {
+  display: none;
+  background: transparent;
+}
+.header__container .menu-mobile-close i {
   color: white;
 }
 .header__container .header__menu {
@@ -439,6 +447,17 @@ footer .footer__body .footer__socials-item i {
     display: block;
   }
   .header__container .menu-mobile:hover {
+    cursor: pointer;
+  }
+  .header__container .menu-mobile-close.show {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(var(--headerHeight, 100px) + 2em);
+    right: 1em;
+  }
+  .header__container .menu-mobile-close.show:hover {
     cursor: pointer;
   }
   .header__container .menu__nav {
