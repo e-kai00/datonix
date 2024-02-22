@@ -34,7 +34,7 @@ body::after {
 }
 
 header {
-  margin-bottom: 0.5em;
+  margin-bottom: 3em;
 }
 
 h1 {
@@ -172,8 +172,11 @@ a {
   transform: scale(0.95);
 }
 
-.inrto__text {
-  margin-bottom: 3.5em;
+.intro__container .intro__text {
+  width: 70%;
+}
+.intro__container .intro__button {
+  margin: 3em 0 3em;
 }
 
 .services__container {
@@ -207,7 +210,7 @@ a {
   grid-template-rows: repeat(5, 1fr);
   gap: 0.8em;
   position: static;
-  margin-top: -10em;
+  margin-top: -8em;
 }
 .services__container .services__item-cards .card-1 {
   grid-row: 1/3;
@@ -233,9 +236,11 @@ a {
 .services__container .services__item-cards .services__item-icon {
   color: #fd6262;
   margin-bottom: 1.5em;
+  font-size: 1.4rem;
 }
 .services__container .services__item-cards .services__item-title {
   color: #516ccd;
+  padding-bottom: 0.4em;
 }
 
 .card-footer {
@@ -411,6 +416,10 @@ footer .footer__body .footer__socials-item i {
 }
 
 @media (max-width: 992px) {
+  .intro__container .intro__text {
+    width: 90%;
+  }
+
   .services__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -570,6 +579,10 @@ footer .footer__body .footer__socials-item i {
   }
   .header__container .signup-btn {
     padding: 0.8em;
+  }
+
+  .intro__container .intro__text {
+    width: 100%;
   }
 
   .services__container .services__item-cards {
