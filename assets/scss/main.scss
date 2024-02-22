@@ -72,8 +72,8 @@ a {
 
 .button {
     @include btn-style;
-    border: 1px solid $coral;
-
+    border: 1px solid $coral;   
+    
     @media (hover: hover) {
 
         &:hover {
@@ -82,7 +82,24 @@ a {
             color: $white;
             transform: scale(0.95);
         }
+        
     }
+
+
+    &.touched {
+        background: transparent;
+        border-color: $white;
+        color: $white;
+        transform: scale(0.95);
+    }
+
+    // &:active {
+    //     background: transparent;
+    //     border-color: $white;
+    //     color: $white;
+    //     transform: scale(0.95);
+    // }
+    
 }
 
 .wrapper {
@@ -177,7 +194,18 @@ a {
         transition: transform 0.3s ease;
         transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 
-        &:hover {
+        @media (hover: hover) {
+
+            &:hover {
+                background-color: $lila;
+                color: $black;
+                border-color: $lila;
+                -webkit-transform: scale(0.95);
+                        transform: scale(0.95);
+            }
+        }
+
+        &.touched {
             background-color: $lila;
             color: $black;
             border-color: $lila;

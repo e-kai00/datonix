@@ -82,6 +82,12 @@ a {
     transform: scale(0.95);
   }
 }
+.button.touched {
+  background: transparent;
+  border-color: white;
+  color: white;
+  transform: scale(0.95);
+}
 
 .wrapper {
   min-height: 100vh;
@@ -164,7 +170,16 @@ a {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.header__container .signup-btn:hover {
+@media (hover: hover) {
+  .header__container .signup-btn:hover {
+    background-color: #516ccd;
+    color: #1b1c1e;
+    border-color: #516ccd;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+.header__container .signup-btn.touched {
   background-color: #516ccd;
   color: #1b1c1e;
   border-color: #516ccd;

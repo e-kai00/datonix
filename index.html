@@ -35,7 +35,7 @@
                         </ul>
                     </nav>
                 </div>
-                <a href="#" class="signup-btn">Sign Up</a>
+                <a href="#" class="signup-btn button">Sign Up</a>
                 <button class="menu-mobile" onclick="toggleMenu()">
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </button>
@@ -257,29 +257,9 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/624b5d3773.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 
-    <script>        
-        // mobile nav buttons
-        let closeButton = document.querySelector('.menu-mobile-close');
-        let menu = document.querySelector('.menu__nav');
-
-        const toggleMenu = () => {
-            menu.classList.toggle('active');
-            closeButton.classList.add('show');
-        }
-
-        const closeMobMenu = () => {
-            menu.classList.toggle('active');
-            closeButton.classList.remove('show');
-        } 
-
-        // header height
-        document.addEventListener('DOMContentLoaded', () => {
-            let header = document.querySelector('header').offsetHeight;
-            document.documentElement.style.setProperty('--headerHeight', `${header}px`);
-           
-        });
-    </script>
+   
 
 </body>
 
