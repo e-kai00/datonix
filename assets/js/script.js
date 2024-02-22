@@ -11,12 +11,17 @@ const closeMobMenu = () => {
     closeButton.classList.remove('show');
 } 
 
-// header height
 document.addEventListener('DOMContentLoaded', () => {
+    // header height
     let header = document.querySelector('header').offsetHeight;
     document.documentElement.style.setProperty('--headerHeight', `${header}px`);
 
-    // simulate a hover effect on mobile
+    // sliders
+    document.querySelectorAll('.slide-in').forEach(slider => {
+        slider.classList.add('appear');
+    });
+
+    // simulate hover effect on mobiles
     const buttons = document.querySelectorAll('.button');
     buttons.forEach(button => {
         button.addEventListener('touchstart', function () {
@@ -27,8 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
             this.classList.remove('touched');
         });
     });
-
-    // document.addEventListener("touchstart", function() {}, true);
-
     
 });

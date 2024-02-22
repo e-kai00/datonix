@@ -79,6 +79,7 @@ a {
     background: transparent;
     border-color: white;
     color: white;
+    -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
 }
@@ -86,6 +87,7 @@ a {
   background: transparent;
   border-color: white;
   color: white;
+  -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 

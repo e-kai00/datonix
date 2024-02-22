@@ -80,7 +80,8 @@ a {
             background: transparent;
             border-color: $white;
             color: $white;
-            transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+                    transform: scale(0.95);
         }
         
     }
@@ -90,16 +91,9 @@ a {
         background: transparent;
         border-color: $white;
         color: $white;
-        transform: scale(0.95);
-    }
-
-    // &:active {
-    //     background: transparent;
-    //     border-color: $white;
-    //     color: $white;
-    //     transform: scale(0.95);
-    // }
-    
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95);
+    }    
 }
 
 .wrapper {
@@ -391,7 +385,6 @@ footer {
         display: -webkit-box;
         display: flex;
         justify-content: space-around;
-        // gap: 2em; 
         color: $grey;
         padding-top: 3em;
         padding-bottom: 3em;
