@@ -74,10 +74,14 @@ a {
     @include btn-style;
     border: 1px solid $coral;
 
-    &:hover {
-        background: transparent;
-        border-color: $white;
-        color: $white;
+    @media (hover: hover) {
+
+        &:hover {
+            background: transparent;
+            border-color: $white;
+            color: $white;
+            transform: scale(0.95);
+        }
     }
 }
 
@@ -197,7 +201,7 @@ a {
 
 .services__container {
     display: -webkit-box;
-    display: flex;    
+    display: flex;
     background: -webkit-gradient(linear, left bottom, right top, color-stop(18%, #000000), color-stop(32%, $lila), color-stop(49%, #000000));
     background: linear-gradient(to top right, #000000 18%, $lila 32%, #000000 49%);
     border-radius: 3px;
@@ -444,9 +448,13 @@ footer {
 
 
 .upcomming__sliders {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     margin: 5em 0 7em;
 
     & > * {
@@ -454,27 +462,33 @@ footer {
     }
 
     .from-left {
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
         font-size: 2.5rem;
         letter-spacing: 3px;
     }
     
     .from-right {
-        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+                transform: translateX(50%);
         color: $grey;
         margin-top: 2em;
     }
 
     .from-left,
     .from-right {
+        -webkit-transition: opacity 600ms, -webkit-transform 800ms ease-in;
+        transition: opacity 600ms, -webkit-transform 800ms ease-in;
         transition: transform 800ms ease-in, opacity 600ms;
+        transition: transform 800ms ease-in, opacity 600ms, -webkit-transform 800ms ease-in;
         opacity: 0;
         text-align: center;        
     }
 
     .from-left.appear,
     .from-right.appear {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }
