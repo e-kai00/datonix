@@ -24,6 +24,7 @@ body {
     color: white;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
     
     &::after {      
         content: "";
@@ -35,6 +36,10 @@ body {
         height: 100%;
         z-index: -1; 
     }    
+}
+
+header {
+    margin-bottom: .5em;
 }
 
 
@@ -77,6 +82,7 @@ a {
 }
 
 .wrapper {
+    min-height: 100vh;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -427,6 +433,44 @@ footer {
     }
 }
 
+
+.upcomming__sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 0 7em;
+
+    & > * {
+        width: 50%;
+    }
+
+    .from-left {
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+    
+    .from-right {
+        transform: translateX(50%);
+        color: $grey;
+        margin-top: 2em;
+    }
+
+    .from-left,
+    .from-right {
+        transition: transform 800ms ease-in, opacity 600ms;
+        opacity: 0;
+        text-align: center;        
+    }
+
+    .from-left.appear,
+    .from-right.appear {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 @media (max-width: 992px) {
 
     .services__container {
@@ -533,6 +577,7 @@ footer {
                 position: absolute;
                 top: calc(var(--headerHeight, 100px) + 2em);
                 right: 1em;
+                z-index: 1;
     
                 &:hover {
                     cursor: pointer;
@@ -556,7 +601,8 @@ footer {
                 background-color: #000;
                 padding-top: 3em;
                 -webkit-box-pack: center;
-                        justify-content: center;                
+                        justify-content: center;         
+                z-index: 1;       
                 
                 .menu__list {
                     display: -webkit-box;
@@ -599,6 +645,13 @@ footer {
             grid-template-rows: 1fr 1fr;
             justify-items: center;
             grid-row-gap: 3em;
+        }
+    }
+
+    .upcomming__sliders {
+
+        & > * {
+            width: 85%;
         }
     }
 }
@@ -671,6 +724,13 @@ footer {
                     margin-right: 1em;
                 }
             }
+        }
+    }
+
+    .upcomming__sliders {
+
+        & > * {
+            width: 95%;
         }
     }
 

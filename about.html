@@ -12,9 +12,14 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:ital@0;1&family=Poppins:wght@200;400&display=swap"
         rel="stylesheet">
 
-
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Datonix | Data Analytics Consulting Service</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -43,12 +48,18 @@
 
         <main>
             <section class="upcomming">
-
+                <div class="upcomming__sliders">
+                    <p class="slide-in from-left">
+                       Coming Soon!
+                    </p>
+                    <p class="slide-in from-right">
+                        Exciting things are on the horizon! We're busy crafting something special just for you. Stay tuned for updates and get ready to be amazed.
+                    </p>
+                </div>
             </section>        
         </main>
 
         <footer>
-            <!-- <div class="footer__container"> -->
             <div class="footer__body">
                 <div class="footer__contacts">
                     <div class="footer__logo footer__title"><i class="fa-brands fa-nfc-symbol"></i> Datonix</div>
@@ -141,7 +152,6 @@
                     </li>
                 </ul>
             </div>
-            <!-- </div> -->
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/624b5d3773.js" crossorigin="anonymous"></script>
@@ -162,10 +172,14 @@
         } 
                
         // header height
-        window.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             let header = document.querySelector('header').offsetHeight;
             document.documentElement.style.setProperty('--headerHeight', `${header}px`);
-        })
+
+            document.querySelectorAll('.slide-in').forEach(slider => {
+                slider.classList.add('appear');
+            });
+        });
     </script>
 
 </body>

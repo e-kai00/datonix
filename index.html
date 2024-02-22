@@ -12,9 +12,13 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400;1,500&family=Open+Sans:ital@0;1&family=Poppins:wght@200;400&display=swap"
         rel="stylesheet">
 
-
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Datonix | Data Analytics Consulting Service</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -161,7 +165,6 @@
         </main>
 
         <footer>
-            <!-- <div class="footer__container"> -->
             <div class="footer__body">
                 <div class="footer__contacts">
                     <div class="footer__logo footer__title"><i class="fa-brands fa-nfc-symbol"></i> Datonix</div>
@@ -171,25 +174,10 @@
                     <p>Beautiful Town</p>
                 </div>
                 <div class="footer__menu">
-                    <ul class="foooter__socials-list">
-                        <li class="footer__socials-item">
-                            <a href="https://linkedin.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Linkedin page (open in a new tab)">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="footer__socials-item">
-                            <a href="https://facebook.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Facebbok page (open in a new tab)">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="footer__socials-item">
-                            <a href="https://twitter.com" target="_blank" rel="noopener"
-                                aria-label="Visit our Twitter page (open in a new tab)"><i
-                                    class="fa-brands fa-square-x-twitter"></i>
-                            </a>
-                        </li>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="index.html">Home</a></li>
+                        <li class="footer__menu-item"><a href="about.html">About</a></li>
+                        <li class="footer__menu-item"><a href="contact.html">Contact Us</a></li>
                     </ul>
                     <a href="" class="footer__button button">Get Started</a>
                 </div>
@@ -239,9 +227,24 @@
                 <div class="footer__socials">
                     <p class="footer__title">Follow Us On:</p>
                     <ul class="foooter__socials-list">
-                        <li class="footer__socials-item"><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li class="footer__socials-item"><i class="fa-brands fa-facebook-f"></i></li>
-                        <li class="footer__socials-item"><i class="fa-brands fa-square-x-twitter"></i></li>
+                        <li class="footer__socials-item">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Linkedin page (open in a new tab)">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="https://facebook.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Facebbok page (open in a new tab)">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener"
+                                aria-label="Visit our Twitter page (open in a new tab)"><i
+                                    class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -254,7 +257,6 @@
                     </li>
                 </ul>
             </div>
-            <!-- </div> -->
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/624b5d3773.js" crossorigin="anonymous"></script>
@@ -275,10 +277,11 @@
         } 
 
         // header height
-        window.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             let header = document.querySelector('header').offsetHeight;
             document.documentElement.style.setProperty('--headerHeight', `${header}px`);
-        })
+           
+        });
     </script>
 
 </body>
